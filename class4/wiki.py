@@ -1,11 +1,10 @@
 #step 1 importing the items
-
 import requests
 from bs4 import BeautifulSoup
 import os
 
 def wikipage_parser():
-    url = "https://en.wikipedia.org/wiki/india"
+    url = "https://en.wikipedia.org/wiki/apple"
     source_code = requests.get(url)
     plain_text = source_code.text
     soup = BeautifulSoup(plain_text, "html.parser")
